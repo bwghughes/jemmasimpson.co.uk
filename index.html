@@ -458,31 +458,14 @@
             border: 2px solid var(--color-coral);
             opacity: 0.3;
             z-index: 2;
+            pointer-events: none;
         }
 
-        .about-image-placeholder {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(145deg, var(--color-sunflower-light) 0%, var(--color-sunflower-pale) 100%);
-        }
-
-        .about-image-placeholder svg {
-            width: 80px;
-            height: 80px;
-            stroke: var(--color-navy);
-            opacity: 0.4;
-            margin-bottom: 1rem;
-        }
-
-        .about-image-placeholder span {
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--color-warm-gray);
+        .about-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
         }
 
         .about-accent {
@@ -1050,13 +1033,7 @@
     <section class="about-section" id="about">
         <div class="about-image reveal">
             <div class="about-image-frame">
-                <div class="about-image-placeholder">
-                    <svg viewBox="0 0 80 80" fill="none" stroke-width="1">
-                        <circle cx="40" cy="28" r="12"/>
-                        <path d="M20 65c0-11 9-20 20-20s20 9 20 20"/>
-                    </svg>
-                    <span>Author Photo</span>
-                </div>
+                <img src="images/headshot.jpg" alt="Jemma Simpson - Author">
             </div>
             <div class="about-accent"></div>
         </div>
@@ -1065,14 +1042,14 @@
             <p class="section-label">About the Author</p>
             <h2 class="about-title">Meet Jemma Simpson</h2>
             <p class="about-text">
-                Jemma Simpson is an author and advocate for mindful living, dedicated to helping
-                others discover the profound peace that comes from looking within. Her work draws
-                from personal experience and years of exploration into what truly makes us happy.
+                Jemma is an experienced NHS registered general nurse, health visitor and school nurse,
+                qualifying as a specialist community public health nurse.
             </p>
             <p class="about-text">
-                Through her writing, Jemma invites readers to step away from the constant pursuit
-                of external validation and instead embrace the quiet wisdom that lives in the
-                middle ground—the balanced space where authentic happiness flourishes.
+                Through her years of caring for others, Jemma has gained unique insights into
+                wellbeing and what truly contributes to lasting happiness. In <em>The Middle</em>,
+                she shares the wisdom that comes from helping people through life's challenges—showing
+                readers that happiness isn't found at the extremes, but in the balanced space within.
             </p>
             <a href="#book" class="btn-secondary">Discover the Book</a>
         </div>
